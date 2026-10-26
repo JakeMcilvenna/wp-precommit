@@ -32,6 +32,12 @@ The default layout is `<repository>/wp-content/themes/theme/`. If Git is rooted 
 
 Keep generated `.husky/tmp/` files out of version control.
 
+## Other projects
+
+Currently used and tested with WordPress themes, but the same workflow can be adapted for other JS, CSS/SCSS and PHP projects. Update the paths in `config.sh`, `paths.sh` and `get-staged.sh`, use your own linter rules, and remove the WPCS checks from `check-tools.sh` if you don't need WordPress standards.
+
+For projects without PHP, also remove the PHP/Composer dependency checks and PHP check/fix steps. Use outside WordPress hasn't been tested yet.
+
 ## TODO
 
 - [ ] Remove hard-coded paths and support other repository layouts.
