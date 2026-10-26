@@ -1,0 +1,6 @@
+#!/bin/sh
+bash "$(dirname "$0")/hooks/pre-commit.sh"
+
+
+# npm test
+
